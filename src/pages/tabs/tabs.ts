@@ -4,8 +4,8 @@ import { FavoritesPage } from "../favorites/favorites";
 import { LibraryPage } from "../library/library";
 
 @Component({
-  selector: 'page-tabs',
-  template: `
+	selector: 'page-tabs',
+	template: `
     <ion-tabs>
       <ion-tab [root]="favoritesPage" tabTitle="Favorites" tabIcon="star"></ion-tab>
       <ion-tab [root]="libraryPage" tabTitle="Library" tabIcon="book"></ion-tab>
@@ -13,6 +13,6 @@ import { LibraryPage } from "../library/library";
   `
 })
 export class TabsPage {
-  favoritesPage = FavoritesPage;
-  libraryPage = LibraryPage;
+	favoritesPage = FavoritesPage;
+	libraryPage = LibraryPage;
 }

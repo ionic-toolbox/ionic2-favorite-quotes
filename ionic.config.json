@@ -1,6 +1,6 @@
 {
-  "name": "ionic2-course",
+  "name": "ionic3-favorite-quotes",
   "app_id": "",
-  "integrations": {},
-  "type": "ionic-angular"
+  "type": "ionic-angular",
+  "integrations": {}
 }

@@ -4,18 +4,18 @@ import { Toggle } from 'ionic-angular';
 import { SettingsService } from "../../services/settings";
 
 @Component({
-  selector: 'page-settings',
-  templateUrl: 'settings.html'
+	selector: 'page-settings',
+	templateUrl: 'settings.html'
 })
 export class SettingsPage {
 
-  constructor(private settingsService: SettingsService) {}
+	constructor(private settingsService: SettingsService) { }
 
-  onToggle(toggle: Toggle) {
-    this.settingsService.setBackground(toggle.checked);
-  }
+	onToggle(toggle: Toggle) {
+		this.settingsService.setBackground(toggle.checked);
+	}
 
-  checkAltBackground() {
-    return this.settingsService.isAltBackground();
-  }
+	checkAltBackground() {
+		return this.settingsService.isAltBackground();
+	}
 }
